@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border:1px solid gray;
+}
+ul{
+    list-style-type: none;
+}
+.contenedor {
+    display:flex;
+    height: 100vh;
+}
+.aplicacion {
+    width:70%;
+    height: 100%;
+    background-color:#F5F5F6;
+}
+
+.boleta {
+    width: 30%;
+    height: 100%;
+    background-color:#35373e;
+}
+
+.principal{
+    display: flex;
+    height: 100%;
+}
+
+nav{
+    width: 100%;
+    width: 20%;
+    min-width: 200px;
+}
+main{
+    height: 100%;
+    width: 80%;
+    /*trabaja en 2 dimensiones*/
+    display: grid;
+    /* cuantos columnas quiero, explicito*/
+    grid-template-columns:repeat(4,1fr) ;
+    /*no se exactamente cuantos productos tendre en las filas*/
+    grid-auto-rows: 400px;
+    padding: 20px;
+    /*separacion entre elementos del grid*/
+    gap: 10px;
+}
+.producto{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.img-top{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.text-bottom{
+    padding: 10px;
+
+}
+.text-bottom  >* {
+    margin: 5px 0;
+
+}
